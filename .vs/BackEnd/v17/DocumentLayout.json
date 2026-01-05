@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\controller\\leadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:controller\\leadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\lead\\leadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\lead\\leadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\lead\\ileadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\lead\\ileadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\lead\\leadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\lead\\leadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\lead\\ileadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\lead\\ileadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\entities\\lead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:entities\\lead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\bddcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:bddcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAawF8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T16:24:41.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-16T16:23:59.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controller\\AuthController.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\AuthController.cs",
+              "RelativeToolTip": "Controller\\AuthController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAswF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:40:31.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BackEnd.csproj",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\BackEnd.csproj",
+              "RelativeDocumentMoniker": "BackEnd.csproj",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\BackEnd.csproj",
+              "RelativeToolTip": "BackEnd.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-15T21:17:04.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeadController.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\LeadController.cs",
+              "RelativeDocumentMoniker": "Controller\\LeadController.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\LeadController.cs",
+              "RelativeToolTip": "Controller\\LeadController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwBoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T19:34:44.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ILeadService.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Lead\\ILeadService.cs",
+              "RelativeDocumentMoniker": "Services\\Lead\\ILeadService.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Lead\\ILeadService.cs",
+              "RelativeToolTip": "Services\\Lead\\ILeadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T18:58:44.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LeadService.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Lead\\LeadService.cs",
+              "RelativeDocumentMoniker": "Services\\Lead\\LeadService.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Lead\\LeadService.cs",
+              "RelativeToolTip": "Services\\Lead\\LeadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T16:31:25.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ILeadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Lead\\ILeadRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Lead\\ILeadRepository.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Lead\\ILeadRepository.cs",
+              "RelativeToolTip": "Repositories\\Lead\\ILeadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T16:54:24.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LeadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Lead\\LeadRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Lead\\LeadRepository.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Lead\\LeadRepository.cs",
+              "RelativeToolTip": "Repositories\\Lead\\LeadRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T16:54:26.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAACQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T17:39:21.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\BddContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BddContext\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\BddContext\\AppDbContext.cs",
+              "RelativeToolTip": "BddContext\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T12:58:14.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Lead.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Entities\\Lead.cs",
+              "RelativeDocumentMoniker": "Entities\\Lead.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Entities\\Lead.cs",
+              "RelativeToolTip": "Entities\\Lead.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T19:31:55.363Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
