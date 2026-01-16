@@ -1,10 +1,12 @@
 ﻿namespace BackEnd.Services.Lead;
+
+using BackEnd.Dto;
 using BackEnd.Entities;
 public interface ILeadService
     {
-    public Task<Lead> createLead(Lead lead);
-    public Task<IEnumerable<Lead>> getLeads();
-    public Task<Lead> getLeadById(int id);
-    public Task updateAsync(Lead lead);
+    public Task<LeadDto> createLead(LeadDto lead);
+    public Task<LeadsResponse> getLeads(int page, int pageSize);
+    public Task<LeadDto> getLeadById(int id);
+    public Task updateAsync(LeadDto lead);
 }
 

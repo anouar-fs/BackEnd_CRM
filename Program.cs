@@ -1,7 +1,11 @@
-﻿using BackEnd.Repositories;
+﻿using BackEnd.Mapper;
+using BackEnd.Repositories;
+using BackEnd.Repositories.Lead;
 using BackEnd.Services;
 using BackEnd.Services.Lead;
-using BackEnd.Repositories.Lead;
+using BackEnd.Validation;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -94,6 +98,10 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>(); 
 builder.Services.AddScoped<ILeadService, LeadService>(); 
 builder.Services.AddScoped<ILeadRepository, LeadRepository>();
+builder.Services.AddScoped<LeadMapper>();
+// Validation 
+builder.Services.AddValidatorsFromAssemblyContaining<LeadDtoValidation>();
+builder.Services.AddFluentValidationAutoValidation();
 
 var app = builder.Build();
 

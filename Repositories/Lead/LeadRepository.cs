@@ -24,10 +24,12 @@ public class LeadRepository:ILeadRepository
         return lead;
     }
 
-    public async Task<IEnumerable<Lead>> getLeads()
+    public async Task<IEnumerable<Lead>> getLeads(int page, int pageSize)
     {
-        var leads = await _dbContext.Leads.ToListAsync();
-
+        var leads = await _dbContext.Leads.OrderByDescending(x => x.ReceivedAt)
+                                          .Skip(pageSize * (page - 1))
+                                          .Take(pageSize)
+                                          .ToListAsync();
         return leads;
     }
 
@@ -35,6 +37,11 @@ public class LeadRepository:ILeadRepository
     {
         _dbContext.Leads.Update(lead);
         await _dbContext.SaveChangesAsync();
+    }
+
+    public int getLeadCount()
+    {
+        return _dbContext.Leads.Count();
     }
 }
 

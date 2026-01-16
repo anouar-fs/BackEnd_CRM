@@ -81,13 +81,13 @@
     "Parameters": [
       {
         "Name": "lead",
-        "Type": "BackEnd.Entities.Lead",
+        "Type": "BackEnd.Dto.LeadDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "BackEnd.Entities.Lead",
+        "Type": "BackEnd.Dto.LeadDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -104,10 +104,21 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BackEnd.Entities.Lead, BackEnd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "BackEnd.Dto.LeadsResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

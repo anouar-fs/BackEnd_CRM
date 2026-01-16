@@ -2,6 +2,7 @@
 using BackEnd.Services.Lead;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.JsonPatch;
+using BackEnd.Dto;
 
 
 namespace BackEnd.Controller
@@ -19,7 +20,7 @@ namespace BackEnd.Controller
 
         [HttpPost]
         [Consumes("application/json")]
-        public async Task<ActionResult<Lead>> AddUser([FromBody] Lead lead)
+        public async Task<ActionResult<LeadDto>> AddUser([FromBody] LeadDto lead)
         {
             try
             {
@@ -33,11 +34,11 @@ namespace BackEnd.Controller
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Lead>>> GetLeads()
+        public async Task<ActionResult<LeadsResponse>> GetLeads(int page,int pageSize)
         {
             try
             {
-                var leads = await _leadService.getLeads();
+                var leads = await _leadService.getLeads(page,pageSize);
                 return Ok(leads);
             }
             catch (Exception ex)
@@ -50,7 +51,7 @@ namespace BackEnd.Controller
         [Consumes("application/json-patch+json")]
         public async Task<IActionResult> UpdateLead(
             int id,
-            [FromBody] JsonPatchDocument<Lead> patchDoc)
+            [FromBody] JsonPatchDocument<LeadDto> patchDoc)
         {
             if (patchDoc == null)
                 return BadRequest();
