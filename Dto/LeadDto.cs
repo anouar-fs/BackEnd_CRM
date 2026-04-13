@@ -8,11 +8,12 @@ public class LeadDto
     public string Email { get; set; }
 
     public string Phone { get; set; }
-
+    public string? whatsappJid { get; set; }
     public string Source { get; set; }
 
     public DateTime ReceivedAt { get; set; }
     public string? ProductInterest { get; set; }
     public string? UtmCampaign { get; set; }
     public bool? Welcome_email_sent { get; set; }
+    public bool? WhatsappAnswer { get; set; }
 }

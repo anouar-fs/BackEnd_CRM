@@ -7,6 +7,7 @@ public class LeadMapper
     public Lead ToLead(LeadDto leadDto) 
     {
         return new Lead { 
+
             FirstName = leadDto.FirstName,
             LastName = leadDto.LastName,
             Email = leadDto.Email,
@@ -16,12 +17,15 @@ public class LeadMapper
             ProductInterest = leadDto.ProductInterest,
             UtmCampaign = leadDto.UtmCampaign,
             Welcome_email_sent = leadDto.Welcome_email_sent,
+            WhatsappJid = leadDto.whatsappJid,
+            WhatsappAnswer = leadDto.WhatsappAnswer
         };
     }
 
     public LeadDto ToLeadDto(Lead lead)
     {
-        return new LeadDto {
+        return new LeadDto
+        {
             Id = lead.Id,
             FirstName = lead.FirstName,
             LastName = lead.LastName,
@@ -32,6 +36,8 @@ public class LeadMapper
             ProductInterest = lead.ProductInterest,
             UtmCampaign = lead.UtmCampaign,
             Welcome_email_sent = lead.Welcome_email_sent,
+            whatsappJid = lead.WhatsappJid,
+            WhatsappAnswer = lead.WhatsappAnswer
         };
     }
 }

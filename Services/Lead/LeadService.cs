@@ -4,6 +4,10 @@ using BackEnd.Dto;
 using BackEnd.Entities;
 using BackEnd.Mapper;
 using BackEnd.Repositories.Lead;
+using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.Collections.Generic;
 
 public class LeadService:ILeadService
 {
@@ -41,10 +45,27 @@ public class LeadService:ILeadService
         return leadDto;
     }
 
-    public async Task updateAsync(LeadDto leadDto)
+    public async Task updateAsync(int id, JsonPatchDocument<Lead> patchDoc)
     {
-        var lead = _mapper.ToLead(leadDto);
-        _leadRepository.updateAsync(lead);
+        var lead = await _leadRepository.getLeadById(id);
+        if (lead == null) throw new Exception("Lead not found");
+
+        patchDoc.ApplyTo(lead, new ModelStateDictionary());
+
+
+        await _leadRepository.updateAsync(lead);
+    }
+
+    public async Task<LeadDto> GetLeadByJid(string whatsappJid)
+    {
+        var lead = await _leadRepository.GetLeadByJid(whatsappJid);
+        var leadDto = _mapper.ToLeadDto(lead);
+        return leadDto;
+    }
+
+    public LeadStats getLeadStats()
+    {
+        return _leadRepository.getLeadStats();
     }
 }
 

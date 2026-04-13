@@ -1,7 +1,10 @@
-﻿using BackEnd.Mapper;
+﻿using BackEnd.Configuration;
+using BackEnd.Mapper;
 using BackEnd.Repositories;
+using BackEnd.Repositories.Event;
 using BackEnd.Repositories.Lead;
 using BackEnd.Services;
+using BackEnd.Services.Event;
 using BackEnd.Services.Lead;
 using BackEnd.Validation;
 using FluentValidation;
@@ -32,13 +35,19 @@ builder.Services.AddCors(
         }); 
     });
 
-builder.Services.AddControllers(options => { 
-    var policy = new AuthorizationPolicyBuilder()
-    .RequireAuthenticatedUser()
-    .Build(); 
-    options.Filters.Add(new AuthorizeFilter(policy)); 
+builder.Services
+    .AddControllers(options =>
+    {
+        var policy = new AuthorizationPolicyBuilder()
+            .RequireAuthenticatedUser()
+            .Build();
+
+        options.Filters.Add(new AuthorizeFilter(policy));
     })
-    .AddNewtonsoftJson();
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.Converters.Add(new TimeOnlyNewtonsoftConverter());
+    });
 
 builder.Services.AddEndpointsApiExplorer(); 
 builder.Services.AddSwaggerGen(
@@ -98,7 +107,10 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>(); 
 builder.Services.AddScoped<ILeadService, LeadService>(); 
 builder.Services.AddScoped<ILeadRepository, LeadRepository>();
+builder.Services.AddScoped<IEventRepository, EventRepository>();
+builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<LeadMapper>();
+builder.Services.AddScoped<EventMapper>();
 // Validation 
 builder.Services.AddValidatorsFromAssemblyContaining<LeadDtoValidation>();
 builder.Services.AddFluentValidationAutoValidation();

@@ -35,13 +35,36 @@ public class LeadRepository:ILeadRepository
 
     public async Task updateAsync(Lead lead)
     {
-        _dbContext.Leads.Update(lead);
-        await _dbContext.SaveChangesAsync();
+        try
+        {
+            _dbContext.Leads.Update(lead);
+            var results = await _dbContext.SaveChangesAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString()); // put breakpoint here
+
+            throw; // optional: rethrow
+        }
     }
 
     public int getLeadCount()
     {
         return _dbContext.Leads.Count();
+    }
+
+    public LeadStats getLeadStats()
+    {
+        var hotLeadscount = _dbContext.Leads.Count(l => l.WhatsappAnswer == true);
+        var coldLeadscount = _dbContext.Leads.Count(l => l.WhatsappAnswer == false);
+        return new LeadStats { coldLeads = hotLeadscount, hotLeads = coldLeadscount };
+    }
+
+    public Task<Lead> GetLeadByJid(string whatsappJid)
+    {
+        var lead = _dbContext.Leads.FirstAsync(l => l.WhatsappJid == whatsappJid);
+
+        return lead;
     }
 }
 

@@ -29,7 +29,7 @@ namespace BackEnd.Controller
             }
             catch (Exception ex)
             {
-                return BadRequest(null);
+                return BadRequest(ex);
             }
         }
 
@@ -47,25 +47,66 @@ namespace BackEnd.Controller
             }
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<LeadsResponse>> GetLead(int id)
+        {
+            try
+            {
+                var lead = await _leadService.getLeadById(id);
+                return Ok(lead);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("/Jid/{whatsappJid}")]
+        public async Task<ActionResult<LeadsResponse>> GetLeadByJid(string whatsappJid)
+        {
+            try
+            {
+                var lead = await _leadService.GetLeadByJid(whatsappJid);
+                return Ok(lead);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("/lead/stats")]
+        public async Task<IActionResult> getLeadsStats()
+        {
+            try
+            {
+                var leadStats = _leadService.getLeadStats();
+                return Ok(leadStats);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
         [HttpPatch("{id}")]
         [Consumes("application/json-patch+json")]
         public async Task<IActionResult> UpdateLead(
             int id,
-            [FromBody] JsonPatchDocument<LeadDto> patchDoc)
+            [FromBody] JsonPatchDocument<Lead> patchDoc)
         {
             if (patchDoc == null)
                 return BadRequest();
 
-            var lead = await _leadService.getLeadById(id);
-            if (lead == null)
-                return NotFound();
+            try
+            {
+                await _leadService.updateAsync(id, patchDoc);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
 
-            patchDoc.ApplyTo(lead, ModelState);
-
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            await _leadService.updateAsync(lead);
 
             return NoContent();
         }

@@ -13,9 +13,11 @@ public class Lead
     public string Phone { get; set; }
 
     public string Source { get; set; }
+    public string? WhatsappJid { get; set; }
 
     public DateTime ReceivedAt { get; set; }
     public string? ProductInterest { get; set; }
     public string? UtmCampaign { get; set; }
     public bool? Welcome_email_sent { get; set; }
+    public bool? WhatsappAnswer { get; set; }
 }

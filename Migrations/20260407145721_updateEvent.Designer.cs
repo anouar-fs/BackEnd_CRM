@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackEnd.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251216121934_LeadsUpdate")]
-    partial class LeadsUpdate
+    [Migration("20260407145721_updateEvent")]
+    partial class updateEvent
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,6 +20,39 @@ namespace BackEnd.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.20")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
+
+            modelBuilder.Entity("BackEnd.Entities.Event", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("date");
+
+                    b.Property<TimeSpan>("HeureDebut")
+                        .HasColumnType("time");
+
+                    b.Property<int?>("LeadId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Statut")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("advisorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LeadId");
+
+                    b.HasIndex("advisorId");
+
+                    b.ToTable("Events");
+                });
 
             modelBuilder.Entity("BackEnd.Entities.Lead", b =>
                 {
@@ -59,6 +92,12 @@ namespace BackEnd.Migrations
                     b.Property<bool?>("Welcome_email_sent")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<bool?>("WhatsappAnswer")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("WhatsappJid")
+                        .HasColumnType("longtext");
+
                     b.HasKey("Id");
 
                     b.ToTable("Leads");
@@ -81,6 +120,21 @@ namespace BackEnd.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("BackEnd.Entities.Event", b =>
+                {
+                    b.HasOne("BackEnd.Entities.Lead", "Lead")
+                        .WithMany()
+                        .HasForeignKey("LeadId");
+
+                    b.HasOne("BackEnd.Entities.User", "advisor")
+                        .WithMany()
+                        .HasForeignKey("advisorId");
+
+                    b.Navigation("Lead");
+
+                    b.Navigation("advisor");
                 });
 #pragma warning restore 612, 618
         }
