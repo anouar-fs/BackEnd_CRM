@@ -118,16 +118,19 @@ builder.Services.AddFluentValidationAutoValidation();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment()) 
-    { 
+// if (app.Environment.IsDevelopment()) 
+//     { 
         app.UseSwagger(); 
         app.UseSwaggerUI(); 
-    }
+    // }
 
 app.UseCors(MyAllowSpecificOrigins); 
 app.UseAuthentication(); 
-app.UseAuthorization(); 
-app.UseHttpsRedirection(); 
-app.UseAuthorization(); 
+app.UseAuthorization();
+// if (!app.Environment.IsDevelopment())
+// {
+//     app.UseHttpsRedirection();
+// }
+// app.UseAuthorization(); 
 app.MapControllers(); 
 app.Run();

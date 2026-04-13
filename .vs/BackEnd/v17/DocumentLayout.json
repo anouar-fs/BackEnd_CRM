@@ -46,8 +46,7 @@
               "RelativeToolTip": "Dto\\AppointementDataByStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:52:03.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T19:52:03.316Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "Controller\\EventController.cs",
               "ViewState": "AgIAAHEAAAAAAAAAAAAwwHwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:50:21.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T19:50:21.366Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "Services\\Event\\EventService.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwEIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:50:00.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T19:50:00.716Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "Services\\Event\\IEventService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:49:59.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T19:49:59.484Z"
             },
             {
               "$type": "Document",
@@ -98,8 +94,7 @@
               "RelativeToolTip": "Repositories\\Event\\IEventRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:49:51.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T19:49:51.417Z"
             },
             {
               "$type": "Document",
@@ -109,7 +104,7 @@
               "RelativeDocumentMoniker": "Repositories\\Event\\EventRepository.cs",
               "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\EventRepository.cs",
               "RelativeToolTip": "Repositories\\Event\\EventRepository.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwLEAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwKYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T19:49:53.068Z",
               "EditorCaption": ""
