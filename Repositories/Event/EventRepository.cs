@@ -4,6 +4,7 @@ using BackEnd.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Globalization;
 
 public class EventRepository : IEventRepository
 {
@@ -177,6 +178,51 @@ public class EventRepository : IEventRepository
 
         return new AppointementData { MonthlyAdvisors = MonthlyAdvrs, MonthlyAppointements = MonthlyAppoints, MonthlyLeads = Monthlylds };
 
+    }
+
+    public Dictionary<MeetingStatus, List<DataAnalytics>> GetAppointementAnalyticsDataByStatus(int idAdvisor)
+    {
+        var currentMonth = DateTime.Now.Month;
+        var i = 1;
+
+        var statsBystatus = new List<DataAnalytics>();
+
+        var AppointementAnalyticsDataByPlanned = new AppointementAnalyticsData { Id = MeetingStatus.Planned, Data = { } };
+        var AppointementAnalyticsDataByAbsent = new AppointementAnalyticsData { Id = MeetingStatus.absent, Data = { } };
+        var AppointementAnalyticsDataByCanceled = new AppointementAnalyticsData { Id = MeetingStatus.Canceled, Data = { } };
+        var AppointementAnalyticsDataByPresented = new AppointementAnalyticsData { Id = MeetingStatus.presented, Data = { } };
+
+        Dictionary<MeetingStatus, List<DataAnalytics>> dict = new Dictionary<MeetingStatus, List<DataAnalytics>>();
+        dict[MeetingStatus.Planned] = new List<DataAnalytics>();
+        dict[MeetingStatus.Canceled] = new List<DataAnalytics>();
+        dict[MeetingStatus.presented] = new List<DataAnalytics>();
+        dict[MeetingStatus.absent] = new List<DataAnalytics>();
+
+        var statuses = new[]
+            {
+                MeetingStatus.Planned,
+                MeetingStatus.absent,
+                MeetingStatus.Canceled,
+                MeetingStatus.presented
+            };
+
+
+        while (i <= currentMonth)
+        {
+            var beginOfMonth = new DateOnly(DateTime.Now.Year, i, 1);
+            var endDate = beginOfMonth.AddMonths(1).AddDays(-1);
+
+            foreach (var status in statuses)
+            {
+                dict[status].Add(new DataAnalytics
+                {
+                    Month = new DateTime(DateTime.Now.Year, i, 1).ToString("MMM", new CultureInfo("en-US")),
+                    Total = _context.Events.Count(e => e.Date >= beginOfMonth && e.Date <= endDate && e.Statut == status && e.advisor.Id == idAdvisor)
+                });
+            }
+            i++;
+        }
+        return dict;
     }
 
 }

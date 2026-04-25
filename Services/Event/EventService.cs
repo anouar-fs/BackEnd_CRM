@@ -69,4 +69,9 @@ public class EventService : IEventService
         var data = _eventRepository.GetAppointementsData();
         return data;
     }
+    public Dictionary<MeetingStatus, List<DataAnalytics>> GetAppointementAnalyticsDataByStatus(int idAdvisor)
+    {
+        var dataAnalytics = _eventRepository.GetAppointementAnalyticsDataByStatus(idAdvisor);
+        return dataAnalytics;
+    }
 }

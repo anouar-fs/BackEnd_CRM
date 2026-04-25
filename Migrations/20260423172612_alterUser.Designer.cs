@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackEnd.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260218150800_JidAdded")]
-    partial class JidAdded
+    [Migration("20260423172612_alterUser")]
+    partial class alterUser
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,22 +30,26 @@ namespace BackEnd.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<DateOnly>("Date")
+                    b.Property<DateTime>("Date")
                         .HasColumnType("date");
 
                     b.Property<TimeSpan>("HeureDebut")
                         .HasColumnType("time");
 
-                    b.Property<int>("Id_conseiller")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Id_lead")
+                    b.Property<int?>("LeadId")
                         .HasColumnType("int");
 
                     b.Property<int>("Statut")
                         .HasColumnType("int");
 
+                    b.Property<int?>("advisorId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("LeadId");
+
+                    b.HasIndex("advisorId");
 
                     b.ToTable("Events");
                 });
@@ -88,8 +92,10 @@ namespace BackEnd.Migrations
                     b.Property<bool?>("Welcome_email_sent")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<bool?>("WhatsappAnswer")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<string>("WhatsappJid")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
@@ -103,6 +109,25 @@ namespace BackEnd.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Firstname")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Lastname")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -114,6 +139,21 @@ namespace BackEnd.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("BackEnd.Entities.Event", b =>
+                {
+                    b.HasOne("BackEnd.Entities.Lead", "Lead")
+                        .WithMany()
+                        .HasForeignKey("LeadId");
+
+                    b.HasOne("BackEnd.Entities.User", "advisor")
+                        .WithMany()
+                        .HasForeignKey("advisorId");
+
+                    b.Navigation("Lead");
+
+                    b.Navigation("advisor");
                 });
 #pragma warning restore 612, 618
         }

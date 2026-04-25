@@ -85,11 +85,32 @@ namespace BackEnd.Controller
             if (refreshToken == null)
                 return Unauthorized("No refresh token found");
 
-            var newAccessToken = await _authService.validateRefresh(refreshToken);
+            try {
+                var newAccessToken = await _authService.validateRefresh(refreshToken);
+                return Ok(new { accessToken = newAccessToken });
+            }
+            catch (Exception ex)
+            {
+                return Unauthorized("refresh token is Invalid");
+            }
 
-            return Ok(new { accessToken = newAccessToken });
         }
 
+        [HttpGet("currentUser")]
+        public ActionResult<AdvisorDto> GetMe()
+        {
+            var id = User.FindFirst("userId")?.Value;
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            var Firstname = User.FindFirst("Firstname")?.Value;
+            var Lastname = User.FindFirst("Lastname")?.Value;
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            var PhoneNumber = User.FindFirst("PhoneNumber")?.Value;
+            var currentUser = new AdvisorDto { 
+                Id = int.Parse(id), Firstname = Firstname, Lastname = Lastname, Email = email, PhoneNumber = PhoneNumber, 
+                Role = Enum.Parse<UserRole>(role) };
+            
+            return Ok(currentUser);
+        }
 
         [HttpGet]
         public async Task<User> GetUsers(AppDbContext dbContext)

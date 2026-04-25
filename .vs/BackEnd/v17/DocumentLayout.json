@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\event\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\event\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\event\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\event\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\dto\\advisordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:dto\\advisordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\controller\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:controller\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\event\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\event\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\event\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\event\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\dto\\appointementdatabystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:dto\\appointementdatabystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,79 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppointementDataByStatus.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Dto\\AppointementDataByStatus.cs",
-              "RelativeDocumentMoniker": "Dto\\AppointementDataByStatus.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Dto\\AppointementDataByStatus.cs",
-              "RelativeToolTip": "Dto\\AppointementDataByStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:52:03.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\EventController.cs",
-              "RelativeDocumentMoniker": "Controller\\EventController.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\EventController.cs",
-              "RelativeToolTip": "Controller\\EventController.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAwwHwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:50:21.366Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Event\\EventService.cs",
-              "RelativeDocumentMoniker": "Services\\Event\\EventService.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Event\\EventService.cs",
-              "RelativeToolTip": "Services\\Event\\EventService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEIAAAAEAAAAAAAAAA==",
+              "Title": "AdvisorDto.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Dto\\AdvisorDto.cs",
+              "RelativeDocumentMoniker": "Dto\\AdvisorDto.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Dto\\AdvisorDto.cs",
+              "RelativeToolTip": "Dto\\AdvisorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:50:00.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IEventService.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Event\\IEventService.cs",
-              "RelativeDocumentMoniker": "Services\\Event\\IEventService.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Event\\IEventService.cs",
-              "RelativeToolTip": "Services\\Event\\IEventService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:49:59.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEventRepository.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\IEventRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Event\\IEventRepository.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\IEventRepository.cs",
-              "RelativeToolTip": "Repositories\\Event\\IEventRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:49:51.417Z"
+              "WhenOpened": "2026-04-24T16:56:04.189Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EventRepository.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\EventRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Event\\EventRepository.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\EventRepository.cs",
-              "RelativeToolTip": "Repositories\\Event\\EventRepository.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwKYAAAAAAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controller\\AuthController.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\AuthController.cs",
+              "RelativeToolTip": "Controller\\AuthController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAiwGAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:49:53.068Z",
+              "WhenOpened": "2026-04-24T16:40:38.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswGMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T16:59:45.007Z",
               "EditorCaption": ""
             }
           ]

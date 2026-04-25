@@ -66,5 +66,25 @@ public class LeadRepository:ILeadRepository
 
         return lead;
     }
+
+    public async Task<Lead> GetLeadByPhoneNumberOrEmail(string phone,string email)
+    {
+        var lead = await _dbContext.Leads.FirstOrDefaultAsync(l => l.Phone == phone || l.Email == email);
+
+        return lead;
+    }
+
+    public async Task<Lead> DeleteLeadByid(int id)
+    {
+        var lead = await getLeadById(id);
+
+        if (lead == null)
+            return null;
+
+        _dbContext.Leads.Remove(lead);
+        await _dbContext.SaveChangesAsync();
+
+        return lead;
+    }
 }
 

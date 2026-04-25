@@ -7,16 +7,14 @@ using MySql.EntityFrameworkCore.Metadata;
 namespace BackEnd.Migrations
 {
     /// <inheritdoc />
-    public partial class Baseline2 : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
-        {
-        }
+        { }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
-        {
-        }
+        { }
     }
 }

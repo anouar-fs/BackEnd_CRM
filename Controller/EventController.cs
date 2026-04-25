@@ -128,5 +128,18 @@ namespace BackEnd.Controller
             }
         }
 
+        [HttpGet("/appointement/Analytics")]
+        public async Task<IActionResult> getLeadsAnalytics(int idAdvisor)
+        {
+            try
+            {
+                var appointementsAnalytics = _eventService.GetAppointementAnalyticsDataByStatus(idAdvisor);
+                return Ok(appointementsAnalytics);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
     }
 }

@@ -3,28 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\event\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\event\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\event\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\event\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\controller\\advisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:controller\\advisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\advisor\\advisorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\advisor\\advisorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\controller\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:controller\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\event\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\event\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\advisor\\advisorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\advisor\\advisorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\event\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\event\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\advisor\\iadvisorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\advisor\\iadvisorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\dto\\appointementdatabystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:dto\\appointementdatabystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\lead\\leadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\lead\\leadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\advisor\\iadvisorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\advisor\\iadvisorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\mapper\\leadmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:mapper\\leadmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\dto\\advisordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:dto\\advisordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\mapper\\advisormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:mapper\\advisormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|c:\\users\\as\\desktop\\anix\\backend\\services\\lead\\ileadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103309AA-331D-4891-8482-564567DDBD38}|BackEnd.csproj|solutionrelative:services\\lead\\ileadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +62,175 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppointementDataByStatus.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Dto\\AppointementDataByStatus.cs",
-              "RelativeDocumentMoniker": "Dto\\AppointementDataByStatus.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Dto\\AppointementDataByStatus.cs",
-              "RelativeToolTip": "Dto\\AppointementDataByStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAIAwwHIAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:52:03.316Z",
+              "WhenOpened": "2026-04-24T15:13:06.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LeadService.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Lead\\LeadService.cs",
+              "RelativeDocumentMoniker": "Services\\Lead\\LeadService.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Lead\\LeadService.cs",
+              "RelativeToolTip": "Services\\Lead\\LeadService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T18:12:46.754Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\EventController.cs",
-              "RelativeDocumentMoniker": "Controller\\EventController.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\EventController.cs",
-              "RelativeToolTip": "Controller\\EventController.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAwwHwAAAAgAAAAAAAAAA==",
+              "Title": "AdvisorService.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Advisor\\AdvisorService.cs",
+              "RelativeDocumentMoniker": "Services\\Advisor\\AdvisorService.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Advisor\\AdvisorService.cs",
+              "RelativeToolTip": "Services\\Advisor\\AdvisorService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:50:21.366Z",
+              "WhenOpened": "2026-04-23T17:41:54.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Event\\EventService.cs",
-              "RelativeDocumentMoniker": "Services\\Event\\EventService.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Event\\EventService.cs",
-              "RelativeToolTip": "Services\\Event\\EventService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEIAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "LeadMapper.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Mapper\\LeadMapper.cs",
+              "RelativeDocumentMoniker": "Mapper\\LeadMapper.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Mapper\\LeadMapper.cs",
+              "RelativeToolTip": "Mapper\\LeadMapper.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:50:00.716Z",
+              "WhenOpened": "2026-04-23T17:56:08.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IEventService.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Event\\IEventService.cs",
-              "RelativeDocumentMoniker": "Services\\Event\\IEventService.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Event\\IEventService.cs",
-              "RelativeToolTip": "Services\\Event\\IEventService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "AdvisorMapper.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Mapper\\AdvisorMapper.cs",
+              "RelativeDocumentMoniker": "Mapper\\AdvisorMapper.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Mapper\\AdvisorMapper.cs",
+              "RelativeToolTip": "Mapper\\AdvisorMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:49:59.484Z",
+              "WhenOpened": "2026-04-23T17:56:01.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdvisorDto.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Dto\\AdvisorDto.cs",
+              "RelativeDocumentMoniker": "Dto\\AdvisorDto.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Dto\\AdvisorDto.cs",
+              "RelativeToolTip": "Dto\\AdvisorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:53:21.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:49:11.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAdvisorService.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Advisor\\IAdvisorService.cs",
+              "RelativeDocumentMoniker": "Services\\Advisor\\IAdvisorService.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Advisor\\IAdvisorService.cs",
+              "RelativeToolTip": "Services\\Advisor\\IAdvisorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:39:46.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAdvisorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Advisor\\IAdvisorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Advisor\\IAdvisorRepository.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Advisor\\IAdvisorRepository.cs",
+              "RelativeToolTip": "Repositories\\Advisor\\IAdvisorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:48:04.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IEventRepository.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\IEventRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Event\\IEventRepository.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\IEventRepository.cs",
-              "RelativeToolTip": "Repositories\\Event\\IEventRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Title": "AdvisorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Advisor\\AdvisorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Advisor\\AdvisorRepository.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Advisor\\AdvisorRepository.cs",
+              "RelativeToolTip": "Repositories\\Advisor\\AdvisorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:49:51.417Z",
+              "WhenOpened": "2026-04-23T17:48:42.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EventRepository.cs",
-              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\EventRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Event\\EventRepository.cs",
-              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Repositories\\Event\\EventRepository.cs",
-              "RelativeToolTip": "Repositories\\Event\\EventRepository.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwLEAAABEAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "ILeadService.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Lead\\ILeadService.cs",
+              "RelativeDocumentMoniker": "Services\\Lead\\ILeadService.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Services\\Lead\\ILeadService.cs",
+              "RelativeToolTip": "Services\\Lead\\ILeadService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T19:49:53.068Z",
+              "WhenOpened": "2026-04-23T17:39:55.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\EventController.cs",
+              "RelativeDocumentMoniker": "Controller\\EventController.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\EventController.cs",
+              "RelativeToolTip": "Controller\\EventController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:37:49.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdvisorController.cs",
+              "DocumentMoniker": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\AdvisorController.cs",
+              "RelativeDocumentMoniker": "Controller\\AdvisorController.cs",
+              "ToolTip": "C:\\Users\\as\\Desktop\\anix\\BackEnd\\Controller\\AdvisorController.cs",
+              "RelativeToolTip": "Controller\\AdvisorController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:37:40.759Z",
               "EditorCaption": ""
             }
           ]

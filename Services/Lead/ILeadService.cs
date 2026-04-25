@@ -12,6 +12,7 @@ public interface ILeadService
     public Task<LeadDto> GetLeadByJid(string whatsappJid);
     public Task updateAsync(int id, JsonPatchDocument<Lead> patchDoc);
     public LeadStats getLeadStats();
+    public Task<LeadDto> DeleteLeadByid(int id);
 
 }
 

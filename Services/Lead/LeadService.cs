@@ -4,9 +4,11 @@ using BackEnd.Dto;
 using BackEnd.Entities;
 using BackEnd.Mapper;
 using BackEnd.Repositories.Lead;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Mysqlx;
 using System.Collections.Generic;
 
 public class LeadService:ILeadService
@@ -21,9 +23,13 @@ public class LeadService:ILeadService
     }
     public async Task<LeadDto> createLead(LeadDto leadDto) {
         var leadReq = _mapper.ToLead(leadDto);
+        var duplicatLead = await _leadRepository.GetLeadByPhoneNumberOrEmail(leadDto.Phone,leadDto.Email);
+        if (duplicatLead is not null)
+        {
+            throw new Exception("Lead with same phone number or email already exists.");
+        }
         var leadRep = await _leadRepository.CreateLead(leadReq);
         return _mapper.ToLeadDto(leadRep);
-
     }
 
     public async Task<LeadsResponse> getLeads(int page, int pageSize)
@@ -66,6 +72,13 @@ public class LeadService:ILeadService
     public LeadStats getLeadStats()
     {
         return _leadRepository.getLeadStats();
+    }
+
+    public async Task<LeadDto> DeleteLeadByid(int id)
+    {
+        var lead = await _leadRepository.DeleteLeadByid(id);
+        var leadDto = _mapper.ToLeadDto(lead);
+        return leadDto;
     }
 }
 

@@ -92,7 +92,12 @@ public class AuthService : IAuthService
         var Claims = new[]
         {
                 new Claim(ClaimTypes.Name,user.Username),
-                new Claim("userId",user.Id.ToString())
+                new Claim("userId",user.Id.ToString()),
+                new Claim(ClaimTypes.Email,user.Email),
+                new Claim("Firstname",user.Firstname),
+                new Claim("Lastname",user.Lastname),
+                new Claim(ClaimTypes.Role,user.Role.ToString()),
+                new Claim("PhoneNumber",user.PhoneNumber)
             };
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]!));

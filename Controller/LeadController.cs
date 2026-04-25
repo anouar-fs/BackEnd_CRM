@@ -88,6 +88,19 @@ namespace BackEnd.Controller
                 return BadRequest(new { message = ex.Message });
             }
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> deleteLead(int id)
+        {
+            try
+            {
+                var lead = await _leadService.DeleteLeadByid(id);
+                return Ok(lead);
+
+            }catch(Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
 
         [HttpPatch("{id}")]
         [Consumes("application/json-patch+json")]

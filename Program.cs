@@ -1,9 +1,11 @@
 ﻿using BackEnd.Configuration;
 using BackEnd.Mapper;
 using BackEnd.Repositories;
+using BackEnd.Repositories.Advisor;
 using BackEnd.Repositories.Event;
 using BackEnd.Repositories.Lead;
 using BackEnd.Services;
+using BackEnd.Services.Advisor;
 using BackEnd.Services.Event;
 using BackEnd.Services.Lead;
 using BackEnd.Validation;
@@ -28,7 +30,7 @@ var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(
     options => 
     { 
-        options.AddPolicy(name: MyAllowSpecificOrigins, policy => { policy.WithOrigins("http://localhost:5173") //front-end URL
+        options.AddPolicy(name: MyAllowSpecificOrigins, policy => { policy.WithOrigins("http://localhost:5173", "https://intercoracoid-tamiko-spasmodically.ngrok-free.dev") //front-end URL
                 .AllowAnyHeader() 
                 .AllowAnyMethod() 
                 .AllowCredentials(); 
@@ -109,8 +111,11 @@ builder.Services.AddScoped<ILeadService, LeadService>();
 builder.Services.AddScoped<ILeadRepository, LeadRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IEventService, EventService>();
+builder.Services.AddScoped<IAdvisorService, AdvisorService>();
+builder.Services.AddScoped<IAdvisorRepository, AdvisorRepository>();
 builder.Services.AddScoped<LeadMapper>();
 builder.Services.AddScoped<EventMapper>();
+builder.Services.AddScoped<AdvisorMapper>();    
 // Validation 
 builder.Services.AddValidatorsFromAssemblyContaining<LeadDtoValidation>();
 builder.Services.AddFluentValidationAutoValidation();

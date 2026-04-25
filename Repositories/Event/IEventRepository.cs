@@ -13,5 +13,6 @@ public interface IEventRepository
     public Task<IEnumerable<Event>> GetEventByDate(DateOnly date);
     public IEnumerable<AppointementDataByStatus> GetAppointementsDataByStatus();
     public AppointementData GetAppointementsData();
+    public Dictionary<MeetingStatus, List<DataAnalytics>> GetAppointementAnalyticsDataByStatus(int idAdvisor);
 }
 

@@ -10,5 +10,7 @@ public interface ILeadRepository
         public Task updateAsync(Lead lead);
         public int getLeadCount();
         public LeadStats getLeadStats();
+        public Task<Lead> GetLeadByPhoneNumberOrEmail(string phone, string email);
+        public Task<Lead> DeleteLeadByid(int id);
     }
 
