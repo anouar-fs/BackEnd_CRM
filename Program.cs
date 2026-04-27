@@ -118,6 +118,7 @@ builder.Services.AddScoped<EventMapper>();
 builder.Services.AddScoped<AdvisorMapper>();    
 // Validation 
 builder.Services.AddValidatorsFromAssemblyContaining<LeadDtoValidation>();
+builder.Services.AddValidatorsFromAssemblyContaining<EventDtoValidation>();
 builder.Services.AddFluentValidationAutoValidation();
 
 var app = builder.Build();

@@ -42,9 +42,9 @@ public class LeadRepository:ILeadRepository
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.ToString()); // put breakpoint here
+            Console.WriteLine(ex.ToString());
 
-            throw; // optional: rethrow
+            throw;
         }
     }
 
