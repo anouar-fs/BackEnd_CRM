@@ -1,0 +1,30 @@
+name: Auto Merge to Main
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  merge-to-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Merge branch into main
+        run: |
+          BRANCH=${GITHUB_REF#refs/heads/}
+
+          git checkout main
+          git pull origin main
+          git merge origin/$BRANCH --no-edit
+          git push origin main
