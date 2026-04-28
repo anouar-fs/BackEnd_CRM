@@ -41,7 +41,7 @@ jobs:
 
       - name: Merge branch into main
         run: |
-          BRANCH=${GITHUB_REF#refs/heads/}
+          BRANCH=${GITHUB_HEAD_REF}
 
           git checkout main
           git pull origin main
