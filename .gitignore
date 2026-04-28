@@ -1,2 +1,26 @@
 # Visual Studio
 .vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build folders
+bin/
+obj/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Rider / VS Code optional
+.idea/
+.vscode/
+
+# Database / cache
+*.db
+*.db-shm
+*.db-wal
