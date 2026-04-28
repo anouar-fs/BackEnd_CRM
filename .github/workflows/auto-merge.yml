@@ -26,6 +26,7 @@ jobs:
       - name: Build project
         run: dotnet build --configuration Release --no-restore
   merge-to-main:
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
