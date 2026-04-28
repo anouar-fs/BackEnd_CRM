@@ -63,7 +63,7 @@ namespace BackEnd.Controller
         {
             try
             {
-                var slot = await _eventService.GetNextSlot()l;
+                var slot = await _eventService.GetNextSlot();
 
                 return Ok(new SlotDto { Date = slot.Date, Slot = slot.Slot });
             }
