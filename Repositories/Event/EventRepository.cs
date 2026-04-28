@@ -18,7 +18,7 @@ public class EventRepository : IEventRepository
 
     public async Task<int> getFreeAdvisorId()
     {
-        var advisors = await _context.Users.Select(u => u.Id).ToListAsync();
+        var advisors = await _context.Users.Where(u => u.Role == UserRole.Advisor).Select(u => u.Id).ToListAsync();
         var selectedAdvisorId = advisors.Select(id => new
         {
             Id = id,

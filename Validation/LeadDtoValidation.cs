@@ -8,10 +8,12 @@ public class LeadDtoValidation : AbstractValidator<LeadDto>
     {
         RuleFor(x => x.FirstName)
             .NotEmpty()
+            .MinimumLength(2)
             .MaximumLength(30);
 
         RuleFor(x => x.LastName)
             .NotEmpty()
+            .MinimumLength(2)
             .MaximumLength(30);
 
         RuleFor(x => x.Email)
