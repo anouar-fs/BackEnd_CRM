@@ -8,18 +8,21 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore;
 using Mysqlx;
 using System.Collections.Generic;
 
 public class LeadService:ILeadService
 {
     private ILeadRepository _leadRepository;
+    private TypesenseService _typesenseService;
     private LeadMapper _mapper;
 
-    public LeadService(ILeadRepository leadRepository,LeadMapper mapper)
+    public LeadService(ILeadRepository leadRepository,LeadMapper mapper,TypesenseService typesenseService)
     {
         _leadRepository = leadRepository;
         _mapper = mapper;
+        _typesenseService = typesenseService;
     }
     public async Task<LeadDto> createLead(LeadDto leadDto) {
         var leadReq = _mapper.ToLead(leadDto);
@@ -29,8 +32,25 @@ public class LeadService:ILeadService
             throw new Exception("Lead with same phone number or email already exists.");
         }
         var leadRep = await _leadRepository.CreateLead(leadReq);
+        var leadIndex = _mapper.ToLeadIndexDto(leadReq);
+        await _typesenseService.IndexLeadAsync(leadIndex);
         return _mapper.ToLeadDto(leadRep);
     }
+
+    public async Task createCollections()
+    {
+
+        var leads = await _leadRepository.GetAllLeads();
+        foreach (var lead in leads) 
+        {
+            var leadDto = _mapper.ToLeadDto(lead); 
+            var leadIndex = _mapper.ToLeadIndexDto(lead);
+            await _typesenseService.IndexLeadAsync(leadIndex);
+        }
+    }
+
+
+
 
     public async Task<LeadsResponse> getLeads(int page, int pageSize)
     {

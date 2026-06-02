@@ -309,6 +309,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BackEnd.Controller.LeadController",
+    "Method": "Search",
+    "RelativePath": "api/Lead/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BackEnd.Controller.LeadController",
+    "Method": "Synchronize",
+    "RelativePath": "api/Lead/synchronize",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BackEnd.Controller.EventController",
     "Method": "getLeadsAnalytics",
     "RelativePath": "appointement/Analytics",

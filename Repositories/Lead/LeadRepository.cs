@@ -1,5 +1,6 @@
 ﻿namespace BackEnd.Repositories.Lead;
 using BackEnd.Entities;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 public class LeadRepository:ILeadRepository
@@ -85,6 +86,12 @@ public class LeadRepository:ILeadRepository
         await _dbContext.SaveChangesAsync();
 
         return lead;
+    }
+
+    public async Task<IEnumerable<Lead>> GetAllLeads()
+    {
+        var leads = await _dbContext.Leads.ToListAsync();
+        return leads;
     }
 }
 

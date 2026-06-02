@@ -14,3 +14,12 @@ public class LeadDto
     public bool? Welcome_email_sent { get; set; }
     public bool? WhatsappAnswer { get; set; }
 }
+
+public class LeadIndexDto
+{
+    public string id { get; set; }
+    public string firstName { get; set; }
+    public string lastName { get; set; }
+    public string email { get; set; }
+    public string phone { get; set; }
+}

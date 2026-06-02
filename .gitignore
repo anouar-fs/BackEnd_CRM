@@ -24,3 +24,10 @@ Thumbs.db
 *.db
 *.db-shm
 *.db-wal
+*.cache
+
+# Json 
+*.json
+*.dll
+*.pdb
+*.exe

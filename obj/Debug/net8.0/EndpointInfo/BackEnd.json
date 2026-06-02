@@ -755,6 +755,39 @@
           }
         }
       }
+    },
+    "/api/Lead/search": {
+      "get": {
+        "tags": [
+          "Lead"
+        ],
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lead/synchronize": {
+      "get": {
+        "tags": [
+          "Lead"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

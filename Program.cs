@@ -15,9 +15,14 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Configuration;
 using System.Text;
+using Typesense;
+using Typesense.Setup;
 
 var builder = WebApplication.CreateBuilder(args); 
 var jwtSettings = builder.Configuration.GetSection("Jwt"); 
@@ -115,11 +120,43 @@ builder.Services.AddScoped<IAdvisorService, AdvisorService>();
 builder.Services.AddScoped<IAdvisorRepository, AdvisorRepository>();
 builder.Services.AddScoped<LeadMapper>();
 builder.Services.AddScoped<EventMapper>();
-builder.Services.AddScoped<AdvisorMapper>();    
+builder.Services.AddScoped<AdvisorMapper>();
+builder.Services.AddScoped<TypesenseService>();
 // Validation 
 builder.Services.AddValidatorsFromAssemblyContaining<LeadDtoValidation>();
 builder.Services.AddValidatorsFromAssemblyContaining<EventDtoValidation>();
 builder.Services.AddFluentValidationAutoValidation();
+
+// ****** Typesense *****************************************************
+
+builder.Services.AddHttpClient<TypesenseService>(client =>
+{
+    client.BaseAddress = new Uri("http://localhost:8108");
+});
+
+builder.Services.AddSingleton(sp =>
+{
+    var settings = sp.GetRequiredService<IOptions<TypesenseSettings>>().Value;
+
+    var config = new Typesense.Setup.Config(
+        new List<Node>
+        {
+            new Node(settings.Host, settings.Port, settings.Protocol)
+        },
+        settings.ApiKey
+    );
+
+    var httpClient = new HttpClient
+    {
+        BaseAddress = new Uri($"{settings.Protocol}://{settings.Host}:{settings.Port}")
+    };
+
+    return new TypesenseClient(
+        Options.Create(config),
+        httpClient
+    );
+});
+
 
 var app = builder.Build();
 

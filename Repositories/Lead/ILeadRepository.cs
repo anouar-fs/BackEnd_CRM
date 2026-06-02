@@ -12,5 +12,7 @@ public interface ILeadRepository
         public LeadStats getLeadStats();
         public Task<Lead> GetLeadByPhoneNumberOrEmail(string phone, string email);
         public Task<Lead> DeleteLeadByid(int id);
-    }
+
+        public Task<IEnumerable<Lead>> GetAllLeads();
+}
 

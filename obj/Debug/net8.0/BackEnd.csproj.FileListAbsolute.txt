@@ -160,3 +160,4 @@ C:\Users\as\Desktop\anix\BackEnd\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\as\Desktop\anix\BackEnd\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\as\Desktop\anix\BackEnd\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\as\Desktop\anix\BackEnd\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\as\Desktop\anix\BackEnd\bin\Debug\net8.0\Typesense.dll

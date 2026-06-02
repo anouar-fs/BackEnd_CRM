@@ -14,5 +14,7 @@ public interface ILeadService
     public LeadStats getLeadStats();
     public Task<LeadDto> DeleteLeadByid(int id);
 
+    public Task createCollections();
+
 }
 

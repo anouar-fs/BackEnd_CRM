@@ -12,10 +12,12 @@ namespace BackEnd.Controller
     public class LeadController : ControllerBase
     {
         private ILeadService _leadService;
+        private TypesenseService _typesenseService;
 
-        public LeadController(ILeadService leadService)
+        public LeadController(ILeadService leadService, TypesenseService typesenseService)
         {
             _leadService = leadService;
+            _typesenseService = typesenseService;
         }
 
         [HttpPost]
@@ -122,6 +124,25 @@ namespace BackEnd.Controller
 
 
             return NoContent();
+        }
+
+        [HttpGet("search")]
+        public async Task<IActionResult> Search(string q)
+        {
+            if (string.IsNullOrWhiteSpace(q))
+                return Ok();
+            //await _typesenseService.CreateLeadsCollection();
+            var result = await _typesenseService.SearchLeads(q);
+
+            return Ok(result);
+        }
+
+        [HttpGet("synchronize")]
+        public async Task<IActionResult> Synchronize()
+        {
+            await _typesenseService.CreateLeadsCollection();
+            await _leadService.createCollections();
+            return Ok();
         }
 
     }

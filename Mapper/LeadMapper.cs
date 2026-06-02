@@ -40,5 +40,17 @@ public class LeadMapper
             WhatsappAnswer = lead.WhatsappAnswer
         };
     }
+
+    public LeadIndexDto ToLeadIndexDto(Lead lead)
+    {
+        return new LeadIndexDto
+        {
+            id = lead.Id.ToString(),
+            firstName = lead.FirstName,
+            lastName = lead.LastName,
+            email = lead.Email,
+            phone = lead.Phone
+        };
+    }
 }
 

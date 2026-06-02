@@ -11,7 +11,7 @@ namespace BackEnd.Validation
             .NotEmpty()
             .MinimumLength(5)
             .MaximumLength(30)
-            .Matches("^[a-zA-Z0-9._- ]+$")
+            .Matches(@"^[a-zA-Z0-9._\- ]+$")
             .WithMessage("Username contains invalid characters.");
 
             RuleFor(lg => lg.password)
