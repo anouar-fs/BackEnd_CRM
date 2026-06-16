@@ -30,15 +30,7 @@ namespace BackEnd.Controller
         [HttpPost("Register")]
         public async Task<IActionResult> AddUser([FromBody] User user,AppDbContext dbContext)
         {
-            try
-            {
-                await _authService.CreateUser(user);
-            }
-            catch (Exception ex) 
-            {
-                return BadRequest(new { message = ex.Message });
-            }
-                
+            await _authService.CreateUser(user);       
             return Ok(new { message = "User added successfully" });
         }
 
@@ -47,9 +39,7 @@ namespace BackEnd.Controller
         public async Task<IActionResult> AddUser([FromBody] LoginDto logindto)
         {
 
-            try
-            {
-                var (accessToken, refreshToken, userId) = await _authService.ValidateCredentials(logindto);
+            var (accessToken, refreshToken, userId) = await _authService.ValidateCredentials(logindto);
 
                 Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
                 {
@@ -60,11 +50,6 @@ namespace BackEnd.Controller
                 });
 
                 return Ok(new { accessToken });
-            }
-            catch (Exception ex) 
-            {
-                return BadRequest(new { message = "Invalid Credentials" });
-            } 
         }
 
         [AllowAnonymous]
@@ -84,15 +69,9 @@ namespace BackEnd.Controller
 
             if (refreshToken == null)
                 return Unauthorized("No refresh token found");
-
-            try {
-                var newAccessToken = await _authService.validateRefresh(refreshToken);
+            
+            var newAccessToken = await _authService.validateRefresh(refreshToken);
                 return Ok(new { accessToken = newAccessToken });
-            }
-            catch (Exception ex)
-            {
-                return Unauthorized("refresh token is Invalid");
-            }
 
         }
 

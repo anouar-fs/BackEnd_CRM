@@ -2,6 +2,7 @@
 
 using BackEnd.Dto;
 using BackEnd.Entities;
+using BackEnd.Exceptions;
 using BackEnd.Mapper;
 using BackEnd.Repositories.Lead;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -29,7 +30,7 @@ public class LeadService:ILeadService
         var duplicatLead = await _leadRepository.GetLeadByPhoneNumberOrEmail(leadDto.Phone,leadDto.Email);
         if (duplicatLead is not null)
         {
-            throw new Exception("Lead with same phone number or email already exists.");
+            throw new ConflictException("Lead with same phone number or email already exists.");
         }
         var leadRep = await _leadRepository.CreateLead(leadReq);
         var leadIndex = _mapper.ToLeadIndexDto(leadReq);
@@ -74,7 +75,7 @@ public class LeadService:ILeadService
     public async Task updateAsync(int id, JsonPatchDocument<Lead> patchDoc)
     {
         var lead = await _leadRepository.getLeadById(id);
-        if (lead == null) throw new Exception("Lead not found");
+        if (lead == null) throw new NotFoundException("Lead not found");
 
         patchDoc.ApplyTo(lead, new ModelStateDictionary());
 

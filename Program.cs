@@ -1,5 +1,6 @@
 ﻿using BackEnd.Configuration;
 using BackEnd.Mapper;
+using BackEnd.Middleware;
 using BackEnd.Repositories;
 using BackEnd.Repositories.Advisor;
 using BackEnd.Repositories.Event;
@@ -167,7 +168,9 @@ var app = builder.Build();
         app.UseSwaggerUI(); 
     // }
 
-app.UseCors(MyAllowSpecificOrigins); 
+app.UseCors(MyAllowSpecificOrigins);
+
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseAuthentication(); 
 app.UseAuthorization();
 // if (!app.Environment.IsDevelopment())

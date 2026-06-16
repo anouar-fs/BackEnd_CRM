@@ -1,5 +1,6 @@
 ﻿using BackEnd.Dto;
 using BackEnd.Entities;
+using BackEnd.Exceptions;
 using BackEnd.Models;
 using BackEnd.Repositories;
 using Microsoft.AspNetCore.Identity;
@@ -39,7 +40,7 @@ public class AuthService : IAuthService
         var storedToken = RefreshTokens
         .FirstOrDefault(t => t.Token == refreshToken);
         if (storedToken == null || storedToken.ExpiresAt < DateTime.UtcNow) { 
-            throw new Exception();
+            throw new UnauthorizedException("Refresh token is invalid or has expired.");
         }
         var user = UserRepository.getUserById(storedToken.UserId).Result;
 
@@ -59,7 +60,7 @@ public class AuthService : IAuthService
 
         if (existingUser is null) 
         {
-            throw new Exception();
+            throw new NotFoundException("username or password are invalid");
         }
 
         var hashedPasswored = existingUser.password;
@@ -69,7 +70,7 @@ public class AuthService : IAuthService
 
         if (result != PasswordVerificationResult.Success)
         {
-            throw new Exception();
+            throw new NotFoundException("username or password are invalid");
         }
 
         var accessToken = GenerateJwtToken(existingUser, _config);

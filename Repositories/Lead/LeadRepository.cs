@@ -1,5 +1,6 @@
 ﻿namespace BackEnd.Repositories.Lead;
 using BackEnd.Entities;
+using BackEnd.Exceptions;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
@@ -36,17 +37,9 @@ public class LeadRepository:ILeadRepository
 
     public async Task updateAsync(Lead lead)
     {
-        try
-        {
             _dbContext.Leads.Update(lead);
             var results = await _dbContext.SaveChangesAsync();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.ToString());
-
-            throw;
-        }
+       
     }
 
     public int getLeadCount()

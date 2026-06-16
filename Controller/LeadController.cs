@@ -24,84 +24,43 @@ namespace BackEnd.Controller
         [Consumes("application/json")]
         public async Task<ActionResult<LeadDto>> AddUser([FromBody] LeadDto lead)
         {
-            try
-            {
-                var ld =  await _leadService.createLead(lead);
-                return Ok(ld);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex);
-            }
+            var ld =  await _leadService.createLead(lead);
+            return Ok(ld);
         }
 
         [HttpGet]
         public async Task<ActionResult<LeadsResponse>> GetLeads(int page,int pageSize)
         {
-            try
-            {
                 var leads = await _leadService.getLeads(page,pageSize);
-                return Ok(leads);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
+                return Ok(leads);   
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<LeadsResponse>> GetLead(int id)
         {
-            try
-            {
                 var lead = await _leadService.getLeadById(id);
                 return Ok(lead);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
         }
 
         [HttpGet("/Jid/{whatsappJid}")]
         public async Task<ActionResult<LeadsResponse>> GetLeadByJid(string whatsappJid)
         {
-            try
-            {
-                var lead = await _leadService.GetLeadByJid(whatsappJid);
-                return Ok(lead);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
+           
+            var lead = await _leadService.GetLeadByJid(whatsappJid);
+            return Ok(lead);
         }
 
         [HttpGet("/lead/stats")]
         public async Task<IActionResult> getLeadsStats()
         {
-            try
-            {
                 var leadStats = _leadService.getLeadStats();
                 return Ok(leadStats);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> deleteLead(int id)
         {
-            try
-            {
                 var lead = await _leadService.DeleteLeadByid(id);
                 return Ok(lead);
-
-            }catch(Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
         }
 
         [HttpPatch("{id}")]
@@ -113,16 +72,7 @@ namespace BackEnd.Controller
             if (patchDoc == null)
                 return BadRequest();
 
-            try
-            {
-                await _leadService.updateAsync(id, patchDoc);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
-
-
+            await _leadService.updateAsync(id, patchDoc);
             return NoContent();
         }
 

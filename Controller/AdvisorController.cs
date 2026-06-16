@@ -16,16 +16,8 @@ namespace BackEnd.Controller
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AdvisorDto>>> getAdvisors()
         {
-            try
-            {
                 var advisors = await _advisorService.getAdvisors();
                 return Ok(advisors);
-            }
-            catch (Exception ex) 
-            {
-                return BadRequest(ex.Message);
-            }
-
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿
 namespace BackEnd.Repositories.Event;
 using BackEnd.Entities;
+using BackEnd.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -77,7 +78,7 @@ public class EventRepository : IEventRepository
             }
         }
 
-        throw new Exception("No available slot found in the next 30 days.");
+        throw new NotFoundException("No available slot found in the next 30 days.");
     }
 
 
@@ -97,7 +98,7 @@ public class EventRepository : IEventRepository
         var advisorId = evnt.advisor?.Id;
 
         if (advisorId == null)
-            throw new Exception("Advisor is required");
+            throw new NotFoundException("Advisor is required");
 
         var isBusy = await _context.Events
             .AnyAsync(e =>
